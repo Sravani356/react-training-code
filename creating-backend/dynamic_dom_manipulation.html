@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <script>
+        const validate =(event) => {
+            console.log(event.target.value);
+        //     if(event.target.value !="") {
+        //         event.target.style.backgroundColor="yellow";
+        //     } else {
+        //         event.target.style.backgroundColor = "green";
+        //     }
+        const result = event.target.value.trim()!="";
+        event.target.style.backgroundColor = result ? 'green' : 'yellow'; //ternery operator replacement of if else
+        event.target.style.color = result ? 'white' : 'black';
+    }
+
+        function handleClick(event) {
+            console.log(event);
+        }
+    </script>
+</head>
+<body>
+    <!-- <label>onkeypress</label><br> -->
+    <!-- <input onkeypress="validate(event)"><br><br> -->
+    <!-- <label>onkeyup</label><br> -->
+    <input onkeyup="validate(event)" onclick="handleClick(event)"><br><br>
+
+    
+</body>
+</html>

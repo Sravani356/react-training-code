@@ -1,0 +1,40 @@
+{
+  "orders": [
+    {
+      "item": "iphone",
+      "price": 450,
+      "id": 1
+    },
+    {
+      "item": "iphone",
+      "price": 450,
+      "id": 2
+    },
+    {
+      "item": "laptop",
+      "price": "700",
+      "id": 3
+    },
+    {
+      "item": "laptop",
+      "price": "700",
+      "id": 4
+    },
+    {
+      "item": "smartPhone",
+      "price": "7000",
+      "date": "2022-07-06",
+      "id": 5
+    },
+    {
+      "item": "smartPhone",
+      "price": "1233",
+      "date": "2022-07-22",
+      "id": 6
+    }
+  ],
+  "categories": [
+    "toys",
+    "apparel"
+  ]
+}

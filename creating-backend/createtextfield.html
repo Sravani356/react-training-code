@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function createTextField() {
+        let textField = document.createElement('input');
+        textField.setAttribute("type", "text");
+        document.body.appendChild(textField);
+        }
+
+        //create radiobutton
+        function createRadioButton() {
+        let textField = document.createElement('input');
+        textField.setAttribute("type", "radio");
+        document.body.appendChild(textField);
+        }
+
+    </script>
+</head>
+<body>
+    <button onclick="createTextField()">generate text field</button>
+    <!-- <button onclick="createRadioButton()">generate radio Field</button><br><br> -->
+
+    <button onclick="createRadioButton()">genera radio field</button><br><br>
+
+
+
+
+    <!-- <div id="fields"></div> -->
+</body>
+</html>
