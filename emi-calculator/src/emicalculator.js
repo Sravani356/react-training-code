@@ -10,7 +10,7 @@ function EmiCalculator(props) {
     const interest = (order.loanAmount *  (order.interestRate * 0.01)) / order.tenure;
 
 
-    function updateValue(event) { //this function is to make the field editable
+    function updateValue(event) { //this function is to make the input field editable
         console.log(event.target);
         setOrder({...order, [event.target.name]: event.target.value });
         };
@@ -37,9 +37,6 @@ function EmiCalculator(props) {
         <input placeholder="tenure in months" min = '12' max='84' value = {order.tenure} type="number" name='tenure' onChange={updateValue}></input>
        
         <h3>Monthly Payable EMI Amount(₹) = {calculateTotal()}</h3>
-        {/* <div>
-        <h1>{order.item}</h1>
-        </div> */}
         </div>
         </>
     )
