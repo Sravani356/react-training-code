@@ -9,7 +9,7 @@ function App() {  //constructor function
   return (
    
    <div className="App">
-      <OrderForm name="Sravani"></OrderForm>
+      <OrderForm ></OrderForm>
       <SpreadOperator/>
       <CombineTwoObjects/>
 
