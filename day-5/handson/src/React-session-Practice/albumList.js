@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './albumList.css';
 
 function AlbumList() {
   getAlbums();
@@ -13,11 +14,13 @@ function AlbumList() {
   }
   return (
     <div>
-      <table>
+        <h1>Displaying records</h1>
+        <table> 
         <tbody>
           <tr>
             <th>Title</th>
             <th>URL</th>
+            <th>Thumbnail Url</th>
           </tr>
           {photos.map((photo, i) => {
             //map returns array
@@ -26,11 +29,12 @@ function AlbumList() {
               <tr key={i}>
                 <td>{photo.title}</td>
                 <td>{photo.url}</td>
+                <td>{photo.thumbnailUrl}</td>
               </tr>
             );
           })}
         </tbody>
-      </table>
+        </table> 
     </div>
   );
 }
