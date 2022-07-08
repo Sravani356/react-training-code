@@ -1,0 +1,12 @@
+body {
+    overflow-y: hidden;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.loader {
+    font-size: large;
+}
