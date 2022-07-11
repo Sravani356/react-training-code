@@ -4,8 +4,8 @@
   padding: 10px;
   border: 1px solid lightblue;
   background-color: grey;
-  color: whitesmoke;
-  margin-left: 280px;
+  color: white;
+  margin-left: 295px;
  
 }
 
@@ -19,8 +19,17 @@
   
 }
 
+#email,
+#textpassword,
+#txt-confirmPassword,
+button
+ {
+  padding: 8px;
+}
+
 .col-25 {
   width: 100%;
+  font-size: 25px;
 }
 
 .col-75 {
