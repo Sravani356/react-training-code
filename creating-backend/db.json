@@ -36,5 +36,31 @@
   "categories": [
     "toys",
     "apparel"
+  ],
+  "userData": [
+    {
+      "emailid": "",
+      "password": "123",
+      "confirmPassword": "456",
+      "id": 1
+    },
+    {
+      "email": "",
+      "password": "789",
+      "confirmPassword": "789",
+      "id": 2
+    },
+    {
+      "email": "",
+      "password": "789",
+      "confirmPassword": "789",
+      "id": 3
+    },
+    {
+      "email": "sravani@gmail.com",
+      "password": "asdfv",
+      "confirmPassword": "asdfv",
+      "id": 4
+    }
   ]
 }
