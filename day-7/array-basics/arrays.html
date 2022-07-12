@@ -1,0 +1,42 @@
+<html>
+    <script>
+        //sorting an array
+        function sortnumbers(scores) {
+        // const scores=[3,4,56,7,8];
+        console.log(scores);
+        scores.sort(function (number1, number2){
+            console.log(number1, number2);
+            return number2-number1; //descending order
+            // return number1-number2; //ascending order
+
+        })
+    
+        console.log(scores);
+    }
+    sortnumbers([3,4,56,7,8]);
+    sortnumbers([-5,7,0,3]);
+
+    //demo
+    // const a1 = [1,2,3,4];
+    // for(let index=0; index<a1.length; index++){
+    //     console.log(a1[index]);
+    // }
+
+//another method
+    const a2= [11,12,13,14];
+    a2.forEach(function (element, index) {  //we cannot return anything from forEach
+        console.log(element, index);
+    })
+
+
+    //if we want to increase the number by 1, use map method
+
+    // const a3 = [22,34,56,78];
+    // const updatedArray = a3.map(function(element, index) {   //map can return an array
+    //     return element+1;
+    // });
+    // console.log(updatedArray);
+
+ 
+        </script>
+</html>

@@ -1,0 +1,41 @@
+<html>
+  <script>
+    //adding elements in an array
+
+    //important logic 1
+    const a1 = [1, 2, 3, 4];
+    const a2 = [1, 2, 3, 4];
+    const newArray = a1.map(function (element, index) {
+      //map can return an array
+      return element + a2[index];
+    });
+    console.log(newArray);
+
+    //adding elements in an array
+
+    //logic 2
+    function addArray(a1, a2) {
+      let result = [];
+      for (let index1 = 0; index1 < a1.length; index1++) {
+        for (let index2 = 0; index2 < a2.length; index2++) {
+          if (index1 === index2) {
+            result.push(a1[index1] + a2[index2]);
+          }
+        }
+      }
+
+      return result;
+    }
+
+    // const updatedArray = addArray(a1,a2)
+
+    console.log("newArray1 : ", addArray(a1, a2));
+  
+  
+  
+  
+  
+  
+  
+  </script>
+</html>
