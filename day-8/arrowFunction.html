@@ -1,0 +1,21 @@
+<html>
+    <body id="mybody">
+
+    </body>
+    <script>
+        const foo = (numbers) => {
+            // var elements = Object.values(arguments); //we cannot use arguments inside the arrow function
+const bodyTag = document.getElementById('mybody');
+            numbers.forEach((value, index) => {
+                const newDiv = document.createElement('div');
+                newDiv.innerHTML=value;
+                bodyTag.appendChild(newDiv);
+                // console.log('test', value[1], index);
+            })
+    
+        }
+
+        foo([11,21,31]); //we have to pass arrays as arrays [a, b, c] in arrow functions
+    </script>
+   
+</html>

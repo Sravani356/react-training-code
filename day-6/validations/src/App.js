@@ -1,10 +1,12 @@
 import './App.css';
-import Validations from './validations';
+import Email from './email';
+// import Validations from './validations';
 
 function App() {
   return (
     <div className="App">
-      <Validations/>
+      {/* <Validations/> */}
+      <Email/>
     </div>
   )
 }

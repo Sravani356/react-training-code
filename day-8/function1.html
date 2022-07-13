@@ -1,0 +1,17 @@
+<html>
+    <script>
+        function foo(a) {
+            var elements = Object.values(arguments);
+
+            elements.forEach(function(value, index){
+                console.log('test', value[1], index);
+            })
+    
+        }
+
+        foo(11,21,31);
+    </script>
+    <body>
+
+    </body>
+</html>

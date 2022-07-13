@@ -1,0 +1,20 @@
+<html>
+    <body>
+
+    </body>
+<script>
+  function createDivs(a) {
+      const elements = Object.values(arguments);
+      const bodyTag = document.querySelector('body');
+      elements.forEach(element => {
+          const divTag = document.createElement('div');
+          divTag.innerHTML = elements
+          bodTag.appendChild(divTag)
+      })
+  }
+  createDivs(11, 12, 13)
+
+
+</script>
+
+</html>
