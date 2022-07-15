@@ -1,5 +1,4 @@
-import './App.css';
-import WebForm from './web-form';
+import WebForm from './components/web-form';
 
 function App() {
   return (

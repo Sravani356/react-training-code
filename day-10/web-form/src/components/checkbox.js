@@ -16,6 +16,10 @@ function Checkbox() {
     allowIncompleteForms: false,
   });
 
+  function updateCheckBox(event) {
+    setCheck({ ...check, [event.target.name]: event.target.value });
+  }
+
   return (
     <div>
       <div className="form-check">
