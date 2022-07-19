@@ -1,0 +1,38 @@
+{
+  "name": "typescript-react-project",
+  "version": "1.0.0",
+  "description": "Using typescript with React",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "magic": "webpack -w"
+  },
+  "author": "Samuel Ogundipe",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^17.0.47",
+    "@types/react-dom": "^17.0.17",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^5.0.1",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.7.4",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
