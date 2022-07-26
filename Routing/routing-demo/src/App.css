@@ -3,9 +3,18 @@
   padding: 10px;
 }
 
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+
 .links {
   text-decoration: none;
   color:brown;
+  display: flex;
 
 }
 
@@ -13,3 +22,4 @@
   cursor: pointer;
   color:burlywood
 }
+

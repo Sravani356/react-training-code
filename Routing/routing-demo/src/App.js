@@ -4,7 +4,7 @@ import About from "./components/About";
 import Contacts from "./components/contacts";
 import Home from "./components/Home";
 import { movies } from "./components/Movie";
-import { MovieDetail, MovieList } from "./components/MovieList";
+import { MovieList } from "./components/MovieList";
 import NotFound from "./components/NotFound";
 import Print from "./components/Print";
 
