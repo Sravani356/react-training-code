@@ -1,12 +1,21 @@
+import { lazy, Suspense } from "react";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import "./App.css";
 import About from "./components/About";
 import Contacts from "./components/contacts";
 import Home from "./components/Home";
 import { movies } from "./components/Movie";
-import { MovieList } from "./components/MovieList";
+// import { MovieList } from "./components/MovieList";
 import NotFound from "./components/NotFound";
 import Print from "./components/Print";
+
+// const MovieList = lazy(() => import('./components/MovieList'))
+
+const MovieList = lazy(() =>
+   import('./components/MovieList').then(module => ({
+      default: module.MovieList
+   }))
+);
 
 function App() {
   return (
@@ -38,7 +47,19 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="about" element={<About />} />
               <Route path="contacts" element={<Contacts />} />
-              <Route path="movies/*" element={<MovieList movies={movies} />} />
+
+              {/* Suspense enable you to perform route-based code-splitting without
+               using an external package.
+               You can simply convert the route components of your app to lazy
+                components and wrap all the routes with a Suspense component */}
+              
+              <Route path="movies/*" element= {
+              <Suspense> //
+              <MovieList movies={movies} />
+              </Suspense>
+              }
+              />
+
               {/* <Route path="movies/:id" element={<MovieDetail />} /> */}
               <Route path="print" element={<Print />} />
 

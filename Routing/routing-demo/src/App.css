@@ -10,6 +10,11 @@ ul {
   list-style: none;
 }
 
+.movie {
+  display: inline;
+  /* margin-top: ; */
+}
+
 
 .links {
   text-decoration: none;

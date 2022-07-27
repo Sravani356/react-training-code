@@ -1,11 +1,12 @@
-import { Link, useParams, Routes, Route } from "react-router-dom";
-import { movies } from "./Movie";
+import { Link, Routes, Route } from "react-router-dom";
+// import { movies } from "./Movie";
+import MovieDetail from "./MovieDetail";
 
   export function MovieList({ movies }) {
     return (
       <div>
         <h2>Movies</h2>
-        <ul>
+        <ul className="movie">
           {movies.map((movie) => (
             <li key={movie.id}>
               <Link className="links" to={`./${movie.id}`}>{movie.name}</Link>
@@ -24,15 +25,4 @@ import { movies } from "./Movie";
     );
   }
 
-  export function MovieDetail() {
-    let { id } = useParams();
-    id = Number(id);
-    const movie = movies.find((movie) => movie.id === id);
-  
-    return (
-      <div>
-        <h3>{movie.name}</h3>
-        <p>{movie.description}</p>
-      </div>
-    );
-  }
+ 
