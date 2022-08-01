@@ -1,7 +1,7 @@
 import './App.css';
 import ButtonComponent from './ButtonComponent';
-import SliderComponent from './SliderComponent';
-import HighOrderComponent from "./HighOrderComponent";
+import SliderComponent from './SliderButton';
+import HighOrderComponent from "./HigherOrderComponent";
 function App(props) {
   const UpdatedSlider = HighOrderComponent(SliderComponent) ;
   const UpdatedBUtton = HighOrderComponent(ButtonComponent); 
