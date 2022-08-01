@@ -537,7 +537,7 @@
       "imageUrl": "/assets/placeimg_500_300_arch10.jpg",
       "contractTypeId": 2,
       "contractSignedOn": "2015-01-21T07:03:49.836Z",
-      "budget": 74221,
+      "budget": 74222,
       "isActive": false
     },
     {
@@ -763,11 +763,11 @@
     {
       "id": 77,
       "name": "Abshire and Sons",
-      "description": "Ergonomic mission-critical knowledge user. Consequatur pariatur eos molestiae qui aut dolorem laudantium nesciunt doloribus.",
+      "description": "Ergonomic mission-critical knowledge and user. Consequatur pariatur eos molestiae qui aut dolorem laudantium nesciunt doloribus.",
       "imageUrl": "/assets/placeimg_500_300_arch6.jpg",
       "contractTypeId": 6,
       "contractSignedOn": "2018-08-16T18:49:06.477Z",
-      "budget": 98123,
+      "budget": 98127,
       "isActive": true
     },
     {
@@ -947,8 +947,8 @@
       "imageUrl": "/assets/placeimg_500_300_arch6.jpg",
       "contractTypeId": 2,
       "contractSignedOn": "2010-09-24T21:02:41.601Z",
-      "budget": 38853,
-      "isActive": false
+      "budget": 3885,
+      "isActive": true
     },
     {
       "id": 97,

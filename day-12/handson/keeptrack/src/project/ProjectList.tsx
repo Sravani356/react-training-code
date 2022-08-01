@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState } from 'react';
 import { Project } from './Project';
 import ProjectCard from './ProjectCard';
@@ -7,10 +6,9 @@ import ProjectForm from './projectForm';
 
 interface ProjectListProps { //to define the props that come into the component
   projects: Project[];
-  onSave: (project: Project) => void;
 }
 
-function ProjectList({ projects, onSave }: ProjectListProps) {
+function ProjectList({ projects }: ProjectListProps) {
 
   const [projectBeingEdited, setProjectBeingEdited] = useState({})
   const handleEdit = (project: Project) => {
@@ -29,7 +27,7 @@ function ProjectList({ projects, onSave }: ProjectListProps) {
           {/* <ProjectCard project={project} onEdit={handleEdit}></ProjectCard>
           <ProjectForm/> */}
           {project === projectBeingEdited ? (
-            <ProjectForm onSave={onSave} onCancel={cancelEditing} />
+            <ProjectForm  project={project} onCancel={cancelEditing} />
           ) : (
             <ProjectCard project={project} onEdit={handleEdit}/>
           )}
